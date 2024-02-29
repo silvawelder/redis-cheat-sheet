@@ -6,28 +6,28 @@
 
 List all configurations
 
-´´´
+```
 CONFIG GET *
-´´´
+```
 ### Users commands
 
 List all users
 
-´´´
+```
 ACL LIST
-´´´
+```
 List user current connection
 
-´´´
+```
 ACL WHOAMI
-´´´
+```
 ## Sentinel commands 
 
 Return the ip and port number of the master with that name. If a failover is in progress or terminated successfully for this master it returns the address and port of the promoted slave..
 
-´´´
+```
 redis-cli -h <pod-dns>.<namespace> -p 26379 --user default --pass '<password>' sentinel get-master-addr-by-name mymaster
-´´´
+```
 
 [1]Redis commands documentation: https://redis.io/commands/
 
